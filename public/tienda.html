@@ -4,117 +4,151 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
     <title>Tienda | Minnya</title>
 </head>
 <body>
-    <header> 
+    <div class="container__tienda">
 
-        <div>
-        <img src ="../files/logo.jpg" alt="logo">
+    <header class="header"> 
+        <div class="logo">
+        <img src ="../files/logo.jpg" alt="logo" class="logo">
         </div> 
         
-        <div>
+        <div class="menu">
         <ul>
-            <li><a href="./nosotras.html" target="_blank">Nosotras</a></li>
-            <li><a href="./tienda.html" target="_blank">Tienda</a></li>
-            <li><a href="./contacto.html" target="_blank">Contacto</a></li>
+        <li><a href="../public/nosotras.html" target="_blank">Nosotras</a></li>
+        <li><a href="../public/tienda.html" target="_blank">Tienda</a>
+            <div class="dropdown">
+        <ul class="section__one">
+            <h2><a href="">Cabello</a></h2>
+            <li><a href="">Srunchies</a></li>
+            <li><a href="">Colitas</a></li>
+            <li><a href="">Sapitas</a></li>
+            <li><a href="">Invisibles</a></li>
+            <li><a href="">Broches</a></li>
+        </ul>
+        <ul class="section__two">
+            <h2><a href="">Cuello</a></h2>
+            <li><a href="">Cadenitas</a></li>
+            <li><a href="">Collar</a></li>
+            <li><a href="">Gargantilla</a></li>
+            <li><a href="">Pañuelos</a></li>
+        </ul>
+        <ul class="section__three">
+            <h2><a href="">Aros/Piercings</a></h2>
+            <li><a href="">Con perla</a></li>
+            <li><a href="">Huggies/Broquel</a></li>
+            <li><a href="">Aros geométricos</a></li>
+        </ul>
+        <ul class="section__four">
+            <h2><a href="">Manos/Muñecas</a></h2>
+            <li><a href="">Pulseras</a></li>
+            <li><a href="">Anillos</a></li>
+        </ul>
+        <ul class="section__five">
+            <h2><a href="">Otros</a></h2>
+            <li><a href="">Bolsas/cajas de regalo</a></li>
+        </ul>
+            </div>
+        </li>
+        <li><a href="../public/contacto.html" target="_blank">Contacto</a></li>
         </ul>
         </div> 
-        <hr>
+        
+    </header>
 
-    </header> 
-    <aside>
+    <aside class="aside">
         <div>
+            <ul>
             <h2>Cabello</h2>
-            <p>Srunchies</p>
-            <p>Colitas</p>
-            <p>Sapitas</p>
-            <p>Invisibles</p>
-            <p>Invisibles</p>
-        </div>
-        <div>
+            <li><a href="./notfound.html" target="_blank">Srunchies</a></li>
+            <li>Colitas</li>
+            <li>Sapitas</li>
+            <li>Invisibles</li>
+            <li>Invisibles</li>
+
             <h2>Cuello</h2>
-            <p>Cadenitas</p>
-            <p>Collar</p>
-            <p>Gargantilla</p>
-            <p>Pañuelos</p>
-        </div>
-        <div>
+            <li><a href="./notfound.html" target="_blank">Cadenitas</a></li>
+            <li>Collar</li>
+            <li>Gargantilla</li>
+            <li>Pañuelos</li>
+
             <h2>Aros/Piercings</h2>
-            <p>Con perla</p>
-            <p>Huggies/Broquel</p>
-            <p>Aros geometricos</p>
-        </div>
-        <div>
+            <li>Con perla</li>
+            <li>Huggies/Broquel</li>
+            <li>Aros geometricos</li>
+
             <h2>Manos/Muñecas</h2>
-            <p>Pulseras</p>
-            <p>Anillos</p>
-        </div>
-        <div>
+            <li>Pulseras</li>
+            <li>Anillos</li>
+
             <h2>Otros</h2>
-            <p>Bolsas/cajas de regalo</p>
+            <li>Bolsas/cajas de regalo</li>
+            </ul>
         </div>
     </aside>
-    <section>
-        <h3>Articulo</h3>
-        <div>
+
+    <section class="section">
+        <h3>NOVEDADES</h3>
+        <div class="files__tienda">
         <img src="../files/scrunchies.jpg">
         <img src="../files/sapitas.jpg">
         <img src="../files/broches.jpg">
         </div>
 
-        <div>
-            <h2>Product</h2>
-            <h2>Product</h2>
-            <h2>Product</h2>
+        <div class="text__tienda">
+            <h2>Srunchies</h2>
+            <h2>Sapitas</h2>
+            <h2>Broches</h2>
         </div>
+        <div class="price">
+            <p>$0.-</p>
+            <p>$0.-</p>
+            <p>$0.-</p>
+        </div>
+        <hr>
     </section>
 
-<hr>
 
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <div class="us">
-        <h2>Nosotros</h2>
-        <p>¡Síguenos en nuestras redes sociales!</p> 
-        
-        <ul>
-        <li><a href="">Red social</a></li>
-        <li><a href="">Red social</a></li>
-        </ul>
-        <p><a href="">¡También, conoce nuestra historia!</a></p> 
-        
-        </div> 
-        
-        <div class="">
-        <h2>Categorias</h2>
-        <ul>
-        <li><a href="">Cabello</a></li>
-        <li><a href="">Cuello</a></li>
-        <li><a href="">Aros/Piercings</a></li>
-        <li><a href="">Manos/Muñecas</a></li>
-        <li><a href="">Otros</a></li>
-        </ul>
-        </div>
-        
-        
-        <div class="">
-        <h2>Minnya | Tienda de Accesorios</h2>
-        <p>Av. xxxxxxx 1234, xxxxxxxx</p>
-        <h4>¡Puedes comunicarte con nosotros también!</h4>
-        <p>11xxxxxxxx</p>
-        <p>xxxx-xxxx</p>
-        </div>
-    </footer>
+<footer class="footer">
+    <div class="box">
+    <div class="us">
+    <h2>Nosotros</h2>
+    <p>¡Síguenos en nuestras redes sociales!</p> 
+    
+    <ul>
+    <li><a href="">Red social</a></li>
+    <li><a href="">Red social</a></li>
+    </ul>
+    <p><a href="">¡También, conoce nuestra historia!</a></p> 
+    
+    </div> 
+    
+    <div class="categories">
+    <h2>Categorias</h2>
+    <ul>
+    <li><a href="">Cabello</a></li>
+    <li><a href="">Cuello</a></li>
+    <li><a href="">Aros/Piercings</a></li>
+    <li><a href="">Manos/Muñecas</a></li>
+    <li><a href="">Otros</a></li>
+    </ul>
+    </div>
+    
+    
+    <div class="resume">
+    <h2>Minnya | Tienda de Accesorios</h2>
+    <p>Av. xxxxxxx 1234, xxxxxxxx</p>
+    <h4>¡Puedes comunicarte con nosotros también!</h4>
+    <p>11xxxxxxxx</p>
+    <p>xxxx-xxxx</p>
+    </div>
+    </div>
+</footer>
+    </div>
 </body>
 </html>

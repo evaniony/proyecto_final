@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../index.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" type="text/css">
-
-    <title>Minnya | Tienda de Accesorios</title>
+    <title>No encontrado | Minnya</title>
 </head>
-<div class="container">
 <body>
-    <header> 
+    <div class="container__notfound">
 
+    <header class="header"> 
         <div class="logo">
-        <img src ="./files/logo.jpg" alt="logo" class="logo">
+        <img src ="../files/logo.jpg" alt="logo" class="logo">
         </div> 
         
         <div class="menu">
         <ul>
-        <li><a href="./public/nosotras.html" target="_blank">Nosotras</a></li>
-        <li><a href="./public/tienda.html" target="_blank">Tienda</a>
+        <li><a href="../public/nosotras.html" target="_blank">Nosotras</a></li>
+        <li><a href="../public/tienda.html" target="_blank">Tienda</a>
             <div class="dropdown">
         <ul class="section__one">
             <h2><a href="">Cabello</a></h2>
@@ -56,71 +53,43 @@
         </ul>
             </div>
         </li>
-        <li><a href="./public/contacto.html" target="_blank">Contacto</a></li>
+        <li><a href="../public/contacto.html" target="_blank">Contacto</a></li>
         </ul>
-        </div> 
-        
-    </header> 
+        </div>  
+    </header>
 
-        
-    <section> 
-    <div class="containerfiles">
-    <div class="file">  
-    <figure>
-    <img src ="./files/stars.jpg" alt="img">
-     <div class="layer">
-     <p>Vestido 'stars'</p>
-     </div>
-    </figure>
-    </div>
-    
-    <div class="file__two">
-    <figure>
-    <img src ="./files/legs.jpg" alt="img">
-     <div class="layer__two">
-     <p>Sandalias 'shine'</p>
-     </div>
-    </figure>
+    <div class="notfound">
+    <picture class="emoji">
+        <img src="../files/notfound.jpg" alt="not found">
+    </picture>
+    <div class="warning">
+        <h2>¡Lo sentimos!</h2>
+        <p>El producto que estabas buscando puede que ya no esté disponible o fue eliminado.</p>
+        <img src="../files/space.png" alt="point">
     </div>
     </div>
-        
-    </section>
-    
-        
-    <section>
-     <div class="subtitle">
-      <h2> NEW ARRIVALS </h2>
-     </div> 
-    </section>
 
-    <section>
-        <div class="arrivals">
-        <div>
-            <img src ="./files/anillos.jpg" alt="img">
-            <h3>Product</h3>
-        </div>
-        <div>
-            <img src ="./files/aros.jpg" alt="img">
-            <h3>Product</h3>
-        </div>
-        <div>
-            <img src ="./files/collar.jpg" alt="img">
-            <h3>Product</h3>
-        </div>
-        <div>
-        <img src ="./files/sapitas.jpg" alt="img">
-        <h3>Product</h3>
-        </div>
-        </div> 
-        
-    </section>
+    <div class="warning__opcion">
+        <h2>Te invitamos a echarle un vistazo a otros productos:</h2>
+        <div class="files__tienda">
+            <img src="../files/anillos.jpg">
+            <img src="../files/collar.jpg">
+            <img src="../files/aros.jpg">
+            </div>
     
-        
-    <section class="ad">
-        <img src ="./files/banner.jpg" alt="ad">
-    </section> 
-        
-    <footer>
+            <div class="text__tienda">
+                <h2>Anillos</h2>
+                <h2>Cadenita</h2>
+                <h2>Set de aros</h2>
+            </div>
+            <div class="price">
+                <p>$0.-</p>
+                <p>$0.-</p>
+                <p>$0.-</p>
+            </div>
+    </div>
+
+    <footer class="footer">
         <div class="box">
         <div class="us">
         <h2>Nosotros</h2>
@@ -155,6 +124,7 @@
         </div>
         </div>
     </footer>
+        </div>
+    </div>
 </body>
-</div>
 </html>

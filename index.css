@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 
 }
-
+:root{
+    --font: 'Be Vietnam Pro', sans-serif;
+}
 .container{
     margin: 0 auto;
 }
@@ -259,25 +262,12 @@ footer {
 
 
 
-
+/* SECCION 'NOSOTRAS */
 /* US */
 
-@media screen and (max-width: 320px) {
-
-    .container__nosotras{
-    grid-template-areas: "header header"
-                         "header header"
-                         "img img"
-                         "text text"
-                         "footer footer";
-
-
-    }
-    
-}
-
 .container__nosotras{
-    width: 67,5em;
+    box-sizing: content-box;
+    width: 100%;
     margin: 0 auto;
     display: grid;
 
@@ -315,7 +305,7 @@ footer {
 
 .container__nosotras .text{
     grid-area: text;
-    margin: 1em;
+    margin: 50px;
 }
 
 .container__nosotras .text>h2{
@@ -339,6 +329,224 @@ footer {
 
 }
 
-.container__nosotras .footer{
+.container__nosotras .footer {
+    grid-area: footer;
+}
+
+
+/* TIENDA */
+
+.container__tienda{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                        'aside section section section'
+                        'aside section section section'
+                        'aside section section section'
+                        'footer footer footer footer' ;
+}
+
+.header{
+    grid-area: header;
+}
+
+.aside{
+    grid-area: aside;
+    margin-left: 20px;
+    border: 1px solid #a37a52;
+    font-family: var(--font);
+    margin-bottom: 200px;
+}
+.aside h2{
+    margin: 5px;
+    border-bottom:1px solid #a37a52;
+    font-size: 27px;
+}
+
+.aside li{
+    margin-left: 5px;
+
+}
+
+.aside li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.aside li>a:hover{
+    transition: all 500ms ease-out;
+    color: #6D4C3D;
+}
+
+.section{
+    grid-area: section;
+    margin-left: 10px;
+    background-color: #c5af99;
+    font-family: var(--font);
+
+}
+.files__tienda{
+    display: flex;
+    justify-content: space-around;
+}
+.text__tienda{
+    display: flex;
+    justify-content: space-around;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.section h3{
+    border-bottom: 3px dotted #a37a52;
+    margin: 10px;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+/* CONTACTO */
+
+.container__contacto{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'section section section section'
+                         'footer footer footer footer';
+    font-family: var(--font);
+    margin: 0 auto;
+}
+
+.header{
+    grid-area: header;
+}
+
+.text__form{
+    grid-area: section;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text__form p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.text__form .one{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.text__form .two{
+    font-size: 18px;
+}
+.text__form .three{
+    font-size: 16px;
+    margin: 10px;
+}
+.text__contacto h2{
+    border-bottom: 1px solid #a37a52;
+    font-family: var(--font);
+    font-weight: 300;
+    margin-left: 5px;
+    margin-top: 20px ;
+}
+
+.form{
+    height: 500px;
+}
+
+.form ::placeholder{
+    color: #a37a52;
+}
+
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 500px;   
+    gap: 10px;
+}
+
+.form input{
+    height: 40px;
+    font-size: 16px;
+    font-family: var(--font);
+}
+input:focus{
+    outline: none;
+    border: 2px solid #6D4C3D;
+}
+
+.form textarea{
+    width: 500px;
+    height: 200px;
+    font-family: var(--font);
+    margin-top: 12px;
+}
+.form textarea:focus{
+    outline: none;
+    border: 2px solid #6D4C3D;
+}
+.btn{
+    width: 200px;
+    height: 100px;
+}
+
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+
+/* NOT FOUND */
+
+.container__notfound{
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'ad ad ad ad'
+                         'notice notice notice notice'
+                         'footer footer footer footer';
+    font-family: var(--font);
+}
+
+.header{
+    grid-area: header;
+}
+
+.notfound{
+    grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.notfound img{
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.warning__opcion{
+    grid-area: notice;
+    margin: 10px;
+    margin-bottom: 45px;
+}
+
+.warning__opcion h2 {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.footer{
     grid-area: footer;
 }
