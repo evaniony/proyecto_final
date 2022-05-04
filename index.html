@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
 
     <title>Minnya | Tienda de Accesorios</title>
 </head>
-<div class="container">
 <body>
-    <header> 
-
-        <div class="logo">
-        <img src ="./files/logo.jpg" alt="logo" class="logo">
-        </div> 
-        
+    <div class="container">
+    <header>
         <div class="menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="./svg/menu.svg"></i>
+            </label>
+            <div class="logo">
+                <img src ="./files/logo.jpg" alt="logo" class="logo">
+                </div> 
         <ul>
         <li><a href="./public/nosotras.html" target="_blank">Nosotras</a></li>
+        <!-- <div class="dropdown-icon">
+            <input type="checkbox" class="on">
+            <label for="on">
+            <i><img src="./svg/arrow.svg"></i>
+            </label>
+            </div> -->
         <li><a href="./public/tienda.html" target="_blank">Tienda</a>
-            <div class="dropdown">
+        <div class="dropdown">
         <ul class="section__one">
             <h2><a href="">Cabello</a></h2>
             <li><a href="">Srunchies</a></li>
@@ -54,7 +60,9 @@
             <h2><a href="">Otros</a></h2>
             <li><a href="">Bolsas/cajas de regalo</a></li>
         </ul>
-            </div>
+        </label>
+        </div> 
+
         </li>
         <li><a href="./public/contacto.html" target="_blank">Contacto</a></li>
         </ul>
@@ -63,7 +71,7 @@
     </header> 
 
         
-    <section> 
+    <section class="files">
     <div class="containerfiles">
     <div class="file">  
     <figure>
@@ -82,19 +90,17 @@
      </div>
     </figure>
     </div>
-    </div>
-        
+    </div>   
     </section>
     
         
-    <section>
-     <div class="subtitle">
+    <section class="subtitle">
+     <div>
       <h2> NEW ARRIVALS </h2>
      </div> 
     </section>
 
-    <section>
-        <div class="arrivals">
+    <section class="arrivals">
         <div>
             <img src ="./files/anillos.jpg" alt="img">
             <h3>Product</h3>
@@ -110,28 +116,29 @@
         <div>
         <img src ="./files/sapitas.jpg" alt="img">
         <h3>Product</h3>
-        </div>
-        </div> 
-        
+        </div>   
     </section>
     
         
     <section class="ad">
         <img src ="./files/banner.jpg" alt="ad">
     </section> 
-        
+    </div>    
     <footer>
+        <div class="box container">
         <div class="box">
         <div class="us">
-        <h2>Nosotros</h2>
-        <p>¡Síguenos en nuestras redes sociales!</p> 
-        
-        <ul>
-        <li><a href="">Red social</a></li>
-        <li><a href="">Red social</a></li>
-        </ul>
-        <p><a href="">¡También, conoce nuestra historia!</a></p> 
-        
+          <h2>Nosotros</h2>
+          <p>¡Síguenos!</p>
+          <div class="social">
+            <picture>
+            <a href="https://www.facebook.com/" target="_blank"><img src="./files/fb-logo.png" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./files/ig-logo.png" alt=""></a>
+            </picture>
+            <div class="xs-text">
+            <p><a href="">¡También, conoce nuestra historia!</a></p>
+            </div>
+            </div>
         </div> 
         
         <div class="categories">
@@ -147,14 +154,20 @@
         
         
         <div class="resume">
+        <ul>
         <h2>Minnya | Tienda de Accesorios</h2>
-        <p>Av. xxxxxxx 1234, xxxxxxxx</p>
-        <h4>¡Puedes comunicarte con nosotros también!</h4>
-        <p>11xxxxxxxx</p>
-        <p>xxxx-xxxx</p>
+        <li>Av. xxxxxxx 1234, xxxxxxxx</li>
+        <h2>Habla con nosotr@s!</h2>
+        <div class="phone">
+        <picture>
+            <img src="./files/wpp-logo.png" alt="">
+        </picture>
+        <li>11xxxxxxxx</li>
+        <li>xxxx-xxxx</li>
+        </ul>
+        </div>
         </div>
         </div>
     </footer>
 </body>
-</div>
 </html>

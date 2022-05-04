@@ -2,38 +2,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: content-box;
 
-}
-:root{
-    --font: 'Be Vietnam Pro', sans-serif;
-}
-.container{
-    margin: 0 auto;
-}
+} */
 
-html{
+/* :root{
+    --font: 'Be Vietnam Pro', sans-serif;
+} */
+
+/* html{
     color: black;
     font-family: 'Source Sans Pro', sans-serif;
-}
-body{
+} */
+/* body{
     background-color: #DCC9B6;
-}
-ul{
+} */
+/* ul{
     list-style-type: none;
-    padding-left: 0%;
 }
 
+.container{
+    display: grid;
+    grid-template-areas: 'header header '
+                         'files files '
+                         'subtitle subtitle'
+                         'arrivals arrivals'
+                         'ad ad'
+                         'footer footer';
 
+}
 
+ */
 
 
 /* HEADER */
 
-header{
+/* header{
+    grid-area: header;
     background-color: #DCC9B6;
 }
 
@@ -104,11 +112,14 @@ header{
 
 
 
-
+ */
 
 /* FILES */
+/* .files{
+    grid-area: files;
+} */
 
-.file figure{
+/* .file figure{
     position: relative;
     width: 564px;
     height: 700px;
@@ -139,13 +150,13 @@ header{
     opacity: 1;
     visibility: visible;
 
-}
+} */
 
 
 
 
 
-.file__two figure{
+/* .file__two figure{
     position: relative;
     width: 564px;
     height: 700px;
@@ -183,13 +194,14 @@ header{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
+} */
 
 
 
 /* SUBTITLE*/
 
-.subtitle {
+/* .subtitle {
+    grid-area: subtitle;
     color: #ffffff;
 }
 
@@ -198,26 +210,28 @@ header{
     font-size: 100px; 
     text-align: center;
     padding: 30px;
-}
+} */
 
 /* OPCIONES */
 
-.arrivals{
+/* .arrivals{
     display: flex;
     justify-content: space-between;
     text-align: center;
     font-family: 'Be Vietnam Pro', sans-serif;
-}
+    grid-area: arrivals;
+} */
 
 
 /* AD */
 
-.ad {
+/* .ad {
+    grid-area: ad;
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-
+ */
 
 
 
@@ -225,7 +239,8 @@ header{
 
 /* FOOTER */
 
-footer {
+/* footer {
+    grid-area: footer;
     background-color: #6D4C3D;
     color: #ffffff;
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -255,7 +270,7 @@ footer {
 .box h4{
     font-size: 15px;
     font-weight: 100;
-}
+} */
 
 
 
@@ -265,7 +280,7 @@ footer {
 /* SECCION 'NOSOTRAS */
 /* US */
 
-.container__nosotras{
+/* .container__nosotras{
     box-sizing: content-box;
     width: 100%;
     margin: 0 auto;
@@ -278,16 +293,16 @@ footer {
     
     font-family: 'Be Vietnam Pro', sans-serif;
 
-}
+} */
 
 
-.container__nosotras header{
+/* .container__nosotras header{
     grid-area: header;
 }
+ */
 
 
-
-.container__nosotras .img{
+/* .container__nosotras .img{
     grid-area: img;
     display: flex;
     justify-content: center;
@@ -299,11 +314,11 @@ footer {
 
     
 }
+ */
 
 
 
-
-.container__nosotras .text{
+/* .container__nosotras .text{
     grid-area: text;
     margin: 50px;
 }
@@ -332,11 +347,11 @@ footer {
 .container__nosotras .footer {
     grid-area: footer;
 }
-
+ */
 
 /* TIENDA */
 
-.container__tienda{
+/* .container__tienda{
     display: grid;
     grid-template-areas: 'header header header header'
                         'aside section section section'
@@ -406,14 +421,14 @@ footer {
 
 .footer{
     grid-area: footer;
-}
+} */
 
 
 
 
 /* CONTACTO */
 
-.container__contacto{
+/* .container__contacto{
     display: grid;
     grid-template-areas: 'header header header header'
                          'section section section section'
@@ -502,14 +517,14 @@ input:focus{
 .footer{
     grid-area: footer;
 }
-
+ */
 
 
 
 
 /* NOT FOUND */
 
-.container__notfound{
+/* .container__notfound{
     display: grid;
     grid-template-areas: 'header header header header'
                          'ad ad ad ad'
@@ -548,5 +563,33 @@ input:focus{
 }
 
 .footer{
+    grid-area: footer;
+} */
+
+.container__article{
+    display: grid;
+    grid-template-areas: 'header header'
+                         'pic description'
+                         'ad ad'
+                         'footer footer';
+}
+
+header{
+    grid-area: header;
+}
+
+.pic{
+    grid-area: pic;
+}
+
+.description{
+    grid-area: description;
+}
+
+.ad{
+    grid-area: ad;
+}
+
+footer{
     grid-area: footer;
 }

@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap" rel="stylesheet">
-    <title>No encontrado | Minnya</title>
+    <title>Producto | Minnya</title>
 </head>
 <body>
-    <div class="container__notfound">
-
-    <header class="header"> 
+    <div class="container__article">
+    <header>
         <div class="logo">
         <img src ="../files/logo.jpg" alt="logo" class="logo">
         </div> 
@@ -20,7 +19,7 @@
         <ul>
         <li><a href="../public/nosotras.html" target="_blank">Nosotras</a></li>
         <li><a href="../public/tienda.html" target="_blank">Tienda</a>
-            <div class="dropdown">
+        <div class="dropdown">     
         <ul class="section__one">
             <h2><a href="">Cabello</a></h2>
             <li><a href="">Srunchies</a></li>
@@ -51,44 +50,45 @@
             <h2><a href="">Otros</a></h2>
             <li><a href="">Bolsas/cajas de regalo</a></li>
         </ul>
-            </div>
+        </div> 
+
         </li>
         <li><a href="../public/contacto.html" target="_blank">Contacto</a></li>
         </ul>
-        </div>  
+        </div>    
     </header>
-
-    <div class="notfound">
-    <picture class="emoji">
-        <img src="../files/notfound.jpg" alt="not found">
-    </picture>
-    <div class="warning">
-        <h2>¡Lo sentimos!</h2>
-        <p>El producto que estabas buscando puede que ya no esté disponible o fue eliminado.</p>
-        <img src="../files/space.png" alt="point">
-    </div>
-    </div>
-
-    <div class="warning__opcion">
-        <h2>Te invitamos a echarle un vistazo a otros productos:</h2>
-        <div class="files__tienda">
-            <img src="../files/anillos.jpg">
-            <img src="../files/collar.jpg">
-            <img src="../files/aros.jpg">
-            </div>
+    <aside class="pic">
+            <img src="../files/ilustration.jpg" alt="">
+    </aside>
+        <section class="description">
+        <h2>Producto</h2>
+        <p>$0.-</p>
+        <p class="title__descrp">DESCRIPCION</p>
+        <p class="subtitle__descrp">Descripcion del producto.</p>
+        <input type="submit" value="COMPRAR">
+        </section>
     
-            <div class="text__tienda">
-                <h2>Anillos</h2>
-                <h2>Cadenita</h2>
-                <h2>Set de aros</h2>
-            </div>
-            <div class="price">
-                <p>$0.-</p>
-                <p>$0.-</p>
-                <p>$0.-</p>
-            </div>
-    </div>
-
+    <section class="ad__article">
+        <h2>Productos relacionados</h2>
+        <div class="files__article">
+            <img src="../files/collar.jpg" alt="">
+            <img src="../files/sapitas.jpg" alt="">
+            <img src="../files/broches.jpg" alt="">
+            <img src="../files/scrunchies.jpg" alt="">
+        </div>
+        <div class="title__article">
+            <h2>Product</h2>
+            <h2>Product</h2>
+            <h2>Product</h2>
+            <h2>Product</h2>
+        </div>
+        <div class="price__article">
+            <p>$0.-</p>
+            <p>$0.-</p>
+            <p>$0.-</p>
+            <p>$0.-</p>
+        </div>
+    </section>
     <footer>
         <div class="box">
         <div class="us">
@@ -133,7 +133,6 @@
         </div>
         </div>
     </footer>
-        </div>
     </div>
 </body>
 </html>

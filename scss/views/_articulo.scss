@@ -1,0 +1,76 @@
+.container__article{
+    display: grid;
+    grid-template-areas: 'header header'
+                         'pic info'
+                         'ad ad'
+                         'footer footer';
+
+     header{
+        grid-area: header;
+    }
+    
+    .pic{
+        grid-area: pic;
+
+        img{
+            margin-left: 100px;
+         
+        
+        }
+    }
+    
+    .description{
+        grid-area: info;
+        font-family: $font;
+        margin: 20px 0;
+        margin-right: 500px;
+
+        h2{
+            font-size: 40px;
+        }
+
+        .title__descrp{
+            margin: 0;
+
+        }
+        .subtitle__descrp{
+            margin: 10px 0;
+        }
+
+
+        input{
+            width: 150px;
+            height: 40px;
+        }
+    }
+    
+    .ad__article{
+        grid-area: ad;
+        font-family: $font;
+        margin-top: 50px;
+        
+        h2{
+            text-align: center;
+        }
+
+        .files__article{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .title__article{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .price__article{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+}

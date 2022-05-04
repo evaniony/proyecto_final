@@ -1,0 +1,129 @@
+.container{
+    display: grid;
+    grid-template-areas: 'header header header'
+                         'files files files'
+                         'subtitle subtitle subtitle'
+                         'arrivals arrivals arrivals'
+                         'ad ad ad '
+                         'footer footer footer';
+
+}
+
+.files{
+    grid-area: files;
+
+    .containerfiles{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .file{
+
+    figure{
+        position: relative;
+        width: 564px;
+        height: 700px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            transition: $transition;
+        }
+
+        .layer{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #5352527b;
+                transition: $transition;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+
+                p{
+                    margin-top: 20px;
+                    color: $second-color;
+                    font-family: $font;
+                }
+            }    
+    
+            &:hover > .layer{
+                opacity: 1;
+                visibility: visible;
+            
+            }
+    }
+  }
+}
+
+.file__two{
+
+    figure{
+        position: relative;
+        width: 564px;
+        height: 700px;
+    
+        img{
+            width: 100%;
+            height: 100%;
+            transition: $transition;
+        }
+
+            .layer__two{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #5352527b;
+                transition: $transition;
+                opacity: 0;
+                visibility: hidden;
+                text-align: center;
+
+            & p{
+                margin-top: 20px;
+                color: $second-color;
+                font-family: $font;
+            }
+          }
+        
+        &:hover > .layer__two{
+            opacity: 1;
+            visibility: visible;
+        
+        }
+    }
+}
+
+.subtitle {
+    grid-area: subtitle;
+    color: $second-color;
+
+    h2{
+        font-family: $third-font;
+        font-size: 100px; 
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+    }
+}
+
+//APLICAR MAPS
+.arrivals{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: $font;
+    grid-area: arrivals;
+    width: 100%;
+}
+
+.ad {
+    grid-area: ad;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+

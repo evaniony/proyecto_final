@@ -1,0 +1,56 @@
+.container__notfound{
+    display: grid;
+    grid-template-areas: 'header header'
+                         'ad ad'
+                         'notice notice'
+                         'footer footer';
+    font-family: $font;
+
+    .header{
+        grid-area: header;
+    }
+
+    .notfound{
+        grid-area: ad;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img{
+            margin: 15px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .warning__opcion{
+        grid-area: notice;
+        margin: 10px;
+        margin-bottom: 45px;
+    }
+
+    .files__tienda{
+        display: flex;
+        justify-content: space-around;
+    }
+    .text__tienda{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .price{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    h2 {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+}

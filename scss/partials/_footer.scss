@@ -1,0 +1,76 @@
+footer {
+    .box{
+        grid-area: footer;
+        background-color: $third-color;
+        color: $second-color;
+        font-family: $font;
+    
+        .box {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+            font-size: 15px;
+            font-weight: 100;
+    
+            a {
+                text-decoration: none;
+                color: $second-color;
+                font-size: 15px;
+                font-weight: 100;
+            }
+    
+            h2 {
+                font-size: 20px;
+                font-weight: 300;
+            }
+    
+    
+            .us{
+    
+                p{
+                    margin: 0;
+                }
+    
+                .social{
+                    margin: 20px 0;
+                    padding: 0;
+                
+                    picture{
+                        display: inline-flex;
+                        flex-direction: row;
+                        gap: 10px;
+                        width: 25px;
+                        height: 25px;
+    
+                        
+                    }
+                
+                }
+            }
+    
+            .categories{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+    
+                h2{
+                    margin: 0;
+                }
+    
+                ul{
+                    padding: 0;
+                }
+    
+            }
+    
+            .resume{
+                text-align: right;
+    
+            }
+        }
+
+    }
+   
+}
