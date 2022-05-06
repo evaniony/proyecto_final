@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAA
+    AAXNSR0IArs4c6QAAAitJREFUSEvFluF100AQhGdOBRAqIFRA6CB0YCrAqQBTAU4FCRXgVEA6IKkApwPoQC7AGt6eTrZO0kkn54fvT96TN/ft7O7tLnGmwzNxMRss6RrAGwBXwektgJLk8xwRWWBJV6iqryAXAC4SgBLSI5y7Jfl3yolRsKQLVNUdyOXURdHv0gbOfSNZpv4vCfYqpV8ALmdBj8Z
+    bkDckLRW9MwgO0N8jYc31pQT5aQjeA/vwSn9eobTrlCk3eBT2Pni/34D8kispy056YFFEdRKBQ4hN7dj5B+Bdx2DoW2xCvm9XewweUyvdsijWdltw8NHfTC6aHGq/X4P8Puh1R3UMrirLgzWHrrf2NO7bH30teG6cO0krSHcD8JLOvW2+H8C+I0lWyd3zQueaLpWX0qqyJ/RhQIAV2ZN3uPlR0iK829he+sGiWGURg5FSKSM/k/QpOoLT+dnSuY+zwCnFrTrJAVsiezlOOTKSY6vKQ4FOh/pQDb79bcaUS1p
+    C+pm0GQx1uriO99S9dxA+Ca2fQL+4/PtMPae2hAF4FhTY0bnDSM1vIAl4JtTyG7XNU1pm7QJ54/+O5TR2Nt0y/T3nGBK1AD8WrfN0B8Gcp9y2fQF5PTkWA9y2D2tt/b49D78L0N4WMrX6WHs7VbkpXc5afVr925a9+9mLgfQA51YnLXvtiEq6RFXZrLX1NhX+XVhv169eb4fSGRZ6i0Q9Kp1rFno/7nJP1kKfe9kcu7OB/wPNhRguBvilQQAAAABJRU5ErkJggg=="/>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet" type="text/css">
 
@@ -11,16 +15,19 @@
 </head>
 <body>
     <div class="container__nosotras">
-
-    <header>
-        <div class="logo">
-            <img src ="../files/logo.jpg" alt="logo" class="logo">
-            </div>
-        <div class="menu">
+        <header>
+            <div class="menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="../svg/menu.svg"></i>
+                </label>
+                <div class="logo">
+                <a href="../index.html"></a><img src ="../files/logo.jpg" alt="logo" class="logo"></a>
+                </div>
             <ul>
             <li><a href="../public/nosotras.html" target="_blank">Nosotras</a></li>
             <li><a href="../public/tienda.html" target="_blank">Tienda</a>
-                <div class="dropdown">
+            <div class="dropdown">
             <ul class="section__one">
                 <h2><a href="">Cabello</a></h2>
                 <li><a href="">Srunchies</a></li>
@@ -51,12 +58,15 @@
                 <h2><a href="">Otros</a></h2>
                 <li><a href="">Bolsas/cajas de regalo</a></li>
             </ul>
-                </div>
+            </label>
+            </div> 
+    
             </li>
             <li><a href="../public/contacto.html" target="_blank">Contacto</a></li>
             </ul>
             </div> 
-    </header>
+            
+        </header>
 
 
     <section class="img">
@@ -80,7 +90,9 @@
     </section>
 
     <footer>
+        <div class="box container">
         <div class="box">
+
         <div class="us">
           <h2>Nosotros</h2>
           <p>¡Síguenos!</p>

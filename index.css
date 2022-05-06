@@ -82,12 +82,12 @@
 
 .dropdown a{
     color: #a37a52;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .dropdown li{
     border-color: #dfdddd;
-    margin-left: 10px;
+    margin-left: 1rem;
 
 }
 
@@ -142,7 +142,7 @@
     text-align: center;
 }
 .file figure .layer p{
-    margin-top: 20px;
+    margin-top: 2rem;
     color: #ffffff;
     font-family:'Be Vietnam Pro', sans-serif;
 }
@@ -180,7 +180,7 @@
     text-align: center;
 }
 .file__two figure .layer__two p{
-    margin-top: 20px;
+    margin-top: 2rem;
     color: #ffffff;
     font-family:'Be Vietnam Pro', sans-serif;
 }
@@ -193,7 +193,7 @@
 .containerfiles{
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 2rem;
 } */
 
 
@@ -229,7 +229,7 @@
     grid-area: ad;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 1rem;
 }
  */
 
@@ -247,28 +247,28 @@
 }
 
 .box a {
-    margin: 20px;
+    margin: 2rem;
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
 .box {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    padding-top: 10px;
-    font-size: 15px;
+    margin: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
 .box h2 {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .box h4{
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 100;
 } */
 
@@ -325,8 +325,8 @@
 
 .container__nosotras .text>h2{
     font-size: 36px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container__nosotras .text p{
@@ -366,7 +366,7 @@
 
 .aside{
     grid-area: aside;
-    margin-left: 20px;
+    margin-left: 2rem;
     border: 1px solid #a37a52;
     font-family: var(--font);
     margin-bottom: 200px;
@@ -394,7 +394,7 @@
 
 .section{
     grid-area: section;
-    margin-left: 10px;
+    margin-left: 1rem;
     background-color: #c5af99;
     font-family: var(--font);
 
@@ -411,12 +411,12 @@
 .price{
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .section h3{
     border-bottom: 3px dotted #a37a52;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .footer{
@@ -454,21 +454,21 @@
 
 .text__form .one{
     font-size: 32px;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 .text__form .two{
     font-size: 18px;
 }
 .text__form .three{
     font-size: 16px;
-    margin: 10px;
+    margin: 1rem;
 }
 .text__contacto h2{
     border-bottom: 1px solid #a37a52;
     font-family: var(--font);
     font-weight: 300;
     margin-left: 5px;
-    margin-top: 20px ;
+    margin-top: 2rem ;
 }
 
 .form{
@@ -485,7 +485,7 @@
     flex-direction: column;
     align-content: center;
     width: 500px;   
-    gap: 10px;
+    gap: 1rem;
 }
 
 .form input{
@@ -546,20 +546,20 @@ input:focus{
 }
 
 .notfound img{
-    margin: 15px;
+    margin: 1.5rem;
     width: 200px;
     height: 200px;
 }
 
 .warning__opcion{
     grid-area: notice;
-    margin: 10px;
+    margin: 1rem;
     margin-bottom: 45px;
 }
 
 .warning__opcion h2 {
-    margin: 10px;
-    margin-bottom: 20px;
+    margin: 1rem;
+    margin-bottom: 2rem;
 }
 
 .footer{

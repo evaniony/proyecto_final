@@ -8,6 +8,15 @@
     .header{
         grid-area: header;
     }
+
+    .text__contacto h2{
+        border-bottom: 1px solid #a37a52;
+        font-family: $font;
+        font-weight: 300;
+        margin-left: 0.5rem;
+        margin-top: 2rem ;
+        font-size: 2rem;
+    }
     
     .text__form{
         grid-area: section;
@@ -16,34 +25,26 @@
         align-items: center;
 
         p{
-            font-size: 24px;
+            font-size: 2.4rem;
             text-align: center;
         }
 
         .one{
-            font-size: 32px;
-            margin-top: 20px;
+            font-size: 3.2rem;
+            margin-top: 2rem;
         }
 
         .two{
-            font-size: 18px;
+            font-size: 1.8rem;
         }
         .three{
-            font-size: 16px;
-            margin: 10px;
+            font-size: 1.6rem;
+            margin: 1rem;
         }
-    }
-
-    .text__contacto h2{
-        border-bottom: 1px solid #a37a52;
-        font-family: $font;
-        font-weight: 300;
-        margin-left: 5px;
-        margin-top: 20px ;
     }
 
     .form{
-        height: 500px;
+        height: 50rem;
 
         & ::placeholder{
             color: #a37a52;
@@ -53,13 +54,13 @@
             display: flex;
             flex-direction: column;
             align-content: center;
-            width: 500px;   
-            gap: 10px;
+            width: 50rem;   
+            gap: 1rem;
         }
 
         input{
-            height: 40px;
-            font-size: 16px;
+            height: 4rem;
+            font-size: 2rem;
             font-family: $font;
 
             &:focus{
@@ -69,10 +70,11 @@
         }
 
         textarea{
-            width: 500px;
-            height: 200px;
+            width: 50rem;
+            height: 20rem;
             font-family: $font;
-            margin-top: 12px;
+            margin-top: 1.2rem;
+            font-size: 2rem;
 
             &:focus{
                 outline: none;
@@ -82,12 +84,33 @@
     }
 
     .btn{
-        width: 200px;
-        height: 100px;
+        width: 20rem;
+        height: 10rem;
     }
 
     footer{
         grid-area: footer;
     }
     
+}
+
+@media (max-width: 320px){
+    .form{
+
+        form{
+            width: 40rem;   
+            gap: 1rem;
+        }
+
+        input{
+            height: 4rem;
+        }
+
+        textarea{
+            width: 40rem;
+            height: 10rem;
+            margin-top: 1.2rem;
+        }
+    }
+
 }
